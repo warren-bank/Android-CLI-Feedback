@@ -13,6 +13,7 @@ Android app that displays a graphical message from the command line.
 * toast:
   ```bash
     am start                                        \
+      --user 0                                      \
       -a android.intent.action.MAIN                 \
       -n com.github.warren_bank.cli_feedback/.Show  \
       -e toast 'my toast message'
@@ -20,6 +21,7 @@ Android app that displays a graphical message from the command line.
 * notification:
   ```bash
     am start                                        \
+      --user 0                                      \
       -a android.intent.action.MAIN                 \
       -n com.github.warren_bank.cli_feedback/.Show  \
       -e notification_title 'my notification title' \
@@ -30,6 +32,7 @@ Android app that displays a graphical message from the command line.
 * notification (title w/ no message):
   ```bash
     am start                                        \
+      --user 0                                      \
       -a android.intent.action.MAIN                 \
       -n com.github.warren_bank.cli_feedback/.Show  \
       -e notification_title 'my notification title'
@@ -39,6 +42,7 @@ Android app that displays a graphical message from the command line.
 * notification (message w/ default title):
   ```bash
     am start                                        \
+      --user 0                                      \
       -a android.intent.action.MAIN                 \
       -n com.github.warren_bank.cli_feedback/.Show  \
       -e notification 'my notification message'

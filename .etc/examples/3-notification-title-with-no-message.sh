@@ -1,3 +1,3 @@
 #!/system/bin/sh
 
-am start -a android.intent.action.MAIN -n com.github.warren_bank.cli_feedback/.Show -e notification_title 'my notification title'
+am start --user 0 -a android.intent.action.MAIN -n com.github.warren_bank.cli_feedback/.Show -e notification_title 'my notification title'
