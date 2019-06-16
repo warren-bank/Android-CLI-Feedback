@@ -10,14 +10,39 @@ Android app that displays a graphical message from the command line.
 
 #### Examples:
 
-* toast:<br>`am start -a android.intent.action.MAIN -n com.github.warren_bank.cli_feedback/.Show -e toast 'my toast message'`
-* notification:<br>`am start -a android.intent.action.MAIN -n com.github.warren_bank.cli_feedback/.Show -e notification_title 'my notification title' -e notification 'my notification message'`
+* toast:
+  ```bash
+    am start                                        \
+      -a android.intent.action.MAIN                 \
+      -n com.github.warren_bank.cli_feedback/.Show  \
+      -e toast 'my toast message'
+  ```
+* notification:
+  ```bash
+    am start                                        \
+      -a android.intent.action.MAIN                 \
+      -n com.github.warren_bank.cli_feedback/.Show  \
+      -e notification_title 'my notification title' \
+      -e notification 'my notification message'
+  ```
   * line 1: 'my notification title'
   * line 2: 'my notification message'
-* notification (title w/ no message):<br>`am start -a android.intent.action.MAIN -n com.github.warren_bank.cli_feedback/.Show -e notification_title 'my notification title'
+* notification (title w/ no message):
+  ```bash
+    am start                                        \
+      -a android.intent.action.MAIN                 \
+      -n com.github.warren_bank.cli_feedback/.Show  \
+      -e notification_title 'my notification title'
+  ```
   * line 1: 'my notification title'
   * line 2: ''
-* notification (message w/ default title):<br>`am start -a android.intent.action.MAIN -n com.github.warren_bank.cli_feedback/.Show -e notification 'my notification message'`
+* notification (message w/ default title):
+  ```bash
+    am start                                        \
+      -a android.intent.action.MAIN                 \
+      -n com.github.warren_bank.cli_feedback/.Show  \
+      -e notification 'my notification message'
+  ```
   * line 1: 'CLI Feedback:'
   * line 2: 'my notification message'
 
