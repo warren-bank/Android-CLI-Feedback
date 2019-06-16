@@ -67,5 +67,7 @@ public class Show extends Activity {
                 return;
             }
         }
+
+        finish();
     }
 }
