@@ -1,12 +1,15 @@
 #### [CLI Feedback](https://github.com/warren-bank/Android-CLI-Feedback)
 
-Android app that displays a graphical message from the command line.
+Android app that can be started from the command line to either show a graphical message, or play an audio alert.
 
-* the app reads the message data from extra(s) included in its opening Intent
-* depending on this data, the app will display either:
-  * a Toast
-  * a Notification
-* once displayed, the app will finish
+* the app reads configuration data from extra(s) included in its opening Intent
+* depending on this data, the app will either:
+  * _show_:
+    * a Toast
+    * a Notification
+  * _play_:
+    * the default sound for the chosen type of audio alert
+* then, the app will finish
 
 #### Examples:
 
